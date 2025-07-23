@@ -148,14 +148,6 @@ for roi = 1:nroi
     r_act_ff(1,roi) = r;
     p_act_ff(1,roi) = p;
 end
-P = [.089
-.707
-.000
-.013
-.000
-.000];
-p_fdr = mafdr(P, 'BHFDR', true); 
-p_act_ff_fdr = mafdr(p_act_ff, 'BHFDR', true); 
 %%
 %scr
 clear
